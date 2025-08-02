@@ -22,6 +22,12 @@
                                 <span>Dashboard</span>
                             </a>
                         </li>
+                        <li class="nav-item {{ Route::is('user.bot.*') ? 'active' : '' }}">
+                            <a class="nav-link {{ Route::is('user.bot.*') ? 'active' : '' }}" href="{{ route('user.bot.list') }}">
+                                <i class="fas fa-headset menu-icon"></i>
+                                <span>Your assistants</span>
+                            </a>
+                        </li>
 
                         {{--  <li class="nav-item">
                             <a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse" role="button"

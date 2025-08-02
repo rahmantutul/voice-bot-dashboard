@@ -80,4 +80,22 @@ class HomeController extends Controller
         return view('user.subscription');
     }
 
+    public function bots()
+    {
+        return view('user.bots');
+    }
+    public function bot_create()
+    {
+        return view('user.bot_create');
+    }
+    
+    public function bot_store()
+    {
+        return view('user.maintenance');
+    }
+    public function overview()
+    {
+        return view('user.overview');
+    }
+
 }

@@ -14,6 +14,7 @@
     <link href="{{ asset('/') }}assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="{{ asset('/') }}assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="{{ asset('/') }}assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('/') }}assets/css/custom.css" rel="stylesheet" type="text/css" />
     @stack('styles')
 </head>
 
@@ -33,10 +34,9 @@
         </div>
         
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ asset('/') }}assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('/') }}assets/libs/simplebar/simplebar.min.js"></script>
-
     <script src="{{ asset('/') }}assets/libs/apexcharts/apexcharts.min.js"></script>
     <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script>
     <script src="{{ asset('/') }}assets/js/pages/index.init.js"></script>
@@ -68,7 +68,21 @@
             });
         </script>
     @endif
-
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const switcher = document.querySelector('.bot-switcher');
+        const btn = document.querySelector('.bot-switcher-btn');
+        
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            switcher.classList.toggle('active');
+        });
+        
+        document.addEventListener('click', function() {
+            switcher.classList.remove('active');
+        });
+    });
+    </script>
     @stack('scripts')
 </body>
 </html>

@@ -97,5 +97,13 @@ class HomeController extends Controller
     {
         return view('user.overview');
     }
+    public function inbox()
+    {
+        return view('user.inbox');
+    }
+    public function support()
+    {
+        return view('user.support');
+    }
 
 }

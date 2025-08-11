@@ -192,7 +192,7 @@
             <div class="dashboard-card">
                 <div class="row g-3 p-4">
                     <!-- Bot Card 1 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="bot-card active p-3 h-100">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="bot-avatar me-3" style="background: var(--primary-gradient)">
@@ -215,7 +215,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="bot-status-badges">
-                                    <a href="#" class="badge bg-primary bg-opacity-10 text-primary me-2" title="Clone">
+                                    <a href="{{route('user.bot.overview')}}" class="badge bg-primary bg-opacity-10 text-primary me-2" title="Clone">
                                         <i class="fas fa-copy me-1"></i> Clone
                                     </a>
                                     <a href="#" class="badge bg-warning bg-opacity-10 text-warning me-2" title="Deactivate">
@@ -230,7 +230,7 @@
                     </div>
                     
                     <!-- Bot Card 2 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="bot-card inactive p-3 h-100">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="bot-avatar me-3" style="background: var(--primary-gradient)">
@@ -253,7 +253,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="bot-status-badges">
-                                    <a href="#" class="badge bg-primary bg-opacity-10 text-primary me-2" title="Clone">
+                                    <a href="{{route('user.bot.overview')}}" class="badge bg-primary bg-opacity-10 text-primary me-2" title="Clone">
                                         <i class="fas fa-copy me-1"></i> Clone
                                     </a>
                                     <a href="#" class="badge bg-warning bg-opacity-10 text-warning me-2" title="Deactivate">
@@ -270,7 +270,7 @@
                     <!-- Add more bot cards here -->
                     
                     <!-- Create New Bot Card -->
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="dashboard-card h-100" style="background: rgba(245, 247, 254, 0.5); border: 2px dashed #d1d7f0;">
                             <div class="d-flex flex-column align-items-center justify-content-center p-4 text-center h-100">
                                 <div class="avatar-lg mb-3 bg-soft-primary rounded-circle d-flex align-items-center justify-content-center">

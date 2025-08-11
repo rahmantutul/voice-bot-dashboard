@@ -64,29 +64,29 @@
                             </div>
                         </div>
                     </li>
-                    <li class="topbar-item">
+                    {{--  <li class="topbar-item">
                         <a class="nav-link nav-icon" href="javascript:void(0);" id="light-dark-mode">
                             <i class="iconoir-half-moon dark-mode"></i>
                             <i class="iconoir-sun-light light-mode"></i>
                         </a>                    
-                    </li>
+                    </li>  --}}
     
                     
     
                     <li class="dropdown topbar-item">
                         <a class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button"
                             aria-haspopup="false" aria-expanded="false" data-bs-offset="0,19">
-                            <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('images/default-avatar.jpg') }}" alt="" class="thumb-md rounded-circle">
+                            <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('assets/images/default-avatar.jpg') }}" alt="" class="thumb-md rounded-circle">
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end py-0">
+                        <div class="dropdown-menu dropdown-menu-end p-2">
                             <div class="d-flex align-items-center dropdown-item py-2 bg-secondary-subtle">
                                 <div class="flex-shrink-0">
-                                    <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('images/default-avatar.jpg') }}" alt="" class="thumb-md rounded-circle">
+                                    <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('assets/images/default-avatar.jpg') }}" alt="" class="thumb-md rounded-circle">
                                 </div>
                                 <div class="flex-grow-1 ms-2 text-truncate align-self-center">
                                     <h6 class="my-0 fw-medium text-dark fs-13">{{ Auth::user()->name }}</h6>
                                     <small class="text-muted mb-0">{{ Auth::user()->email }}</small>
-                                </div><!--end media-body-->
+                                </div>
                             </div>
                             <div class="dropdown-divider mt-0"></div>
                             <small class="text-muted px-2 pb-1 d-block">Account</small>
@@ -97,9 +97,9 @@
                             </a>
 
                             <div class="dropdown-divider mb-0"></div>
-                            <a href="{{ route('user.subscription') }}" class="btn bg-black text-white shadow-sm rounded-pill d-block m-3">
+                            <a href="{{ route('user.subscription') }}" class="btn bg-black text-white shadow-sm rounded-pill d-block mt-2 mb-2">
                                 Upgrade your plan
-                                <img src="{{ asset('/') }}assets/images/extra/giphy.gif" alt="" style="height: 25px; margin-left: 8px; display: inline-block; vertical-align: middle;">
+                                <img src="{{ asset('/') }}assets/images/extra/giphy.gif" alt="" style="height: 25px; margin-left: 3px; display: inline-block; vertical-align: middle;">
                             </a>
                    
                            

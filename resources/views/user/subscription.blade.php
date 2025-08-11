@@ -161,7 +161,7 @@
         }
         
         .plan-price {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: #6c63ff;
             margin: 0.75rem 0;

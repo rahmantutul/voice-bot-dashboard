@@ -21,7 +21,7 @@
         <!-- Card with Glass Morphism Effect -->
         <div class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden border border-white/30">
             <!-- Decorative Header -->
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-center relative">
+            <div class="bg-gradient-to-r p-6 text-center relative" style="background: linear-gradient(90deg, #6c63ff, #4d44db); ">
                 <h1 class="text-2xl font-bold text-white mt-4">Creative AI</h1>
                 <p class="text-blue-100 mt-1">Your intelligent voice assistant</p>
             </div>
@@ -128,7 +128,7 @@
 
                     <button
                         type="submit"
-                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 hover:shadow-md"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-sm text-sm font-medium text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 hover:shadow-md" style="background: linear-gradient(90deg, #6c63ff, #4d44db); "
                     >
                         Sign In
                     </button>
